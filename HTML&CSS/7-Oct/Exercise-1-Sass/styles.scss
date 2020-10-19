@@ -1,0 +1,25 @@
+$grid__cols: 12;
+
+.container {
+  .row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    text-shadow: black 3px 2px 5px;
+  }
+
+  @for $i from 1 through $grid__cols {
+    .col-#{$i} {
+      flex-basis: (100 / ($grid__cols / $i)) * 1%;
+      background-color: yellow;
+      margin: 10px 1px;
+      padding: 0.5em;
+      align-items: center;
+    }
+  }
+}
+
+//Styling of grid for demostration purposes

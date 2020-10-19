@@ -1,0 +1,44 @@
+html body {
+  margin: 2;
+  height: 100%
+}
+
+
+
+
+.yellow-Box1 {
+  width: 95%;
+  padding: 2%;
+  background-color: green;
+}
+
+.green-Box2 {
+  width: 95%;
+  padding: 2%;
+  background-color: yellow;
+}
+
+.yellow-Box3 {
+  width: 95%;
+  padding: 2%;
+  background-color: green;
+}
+
+.green-Box4 {
+  width: 95%;
+  padding: 2%;
+  background-color: yellow;
+}
+
+.green-Box5 {
+  width: 95%;
+  padding: 2%;
+  background-color: green;
+}
+
+#text-box {
+  text-align: center;
+  color: white;
+  padding: 220px;
+  font-size: 5vw;
+}

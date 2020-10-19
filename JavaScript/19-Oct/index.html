@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        background: #335;
+        color: white;
+        text-align: center;
+        width: 30rem;
+        border-radius: 15px;
+        justify-content: center;
+      }
+
+      .container h4 {
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+        font-size: 2vmax;
+        border-bottom: white 1px solid;
+      }
+      form .input-field {
+        margin-bottom: 1rem;
+        width: 25rem;
+        height: 2.4rem;
+        border-radius: 20px;
+        padding-left: 3rem;
+      }
+      form a {
+        color: green;
+      }
+      #Btn_1 {
+        background-color: green;
+        padding: 1rem;
+        color: white;
+        text-shadow: black 2px 3px 4px;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 20px;
+      }
+      .container .input #Btn_1 {
+        float: right;
+        margin-right: 1rem;
+      }
+      .input .icon {
+        position: absolute;
+      }
+      .icon {
+        padding: 10px;
+        color: green;
+        min-width: 50px;
+        text-align: center;
+      }
+      #Error {
+        margin-top: 1rem;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Create an Account</h4>
+      <form action="#" method="POST">
+        <div class="input">
+          <i class="icon"><img src="user.png" alt="" width="20px" /></i>
+          <input class="input-field" type="text" placeholder="Name" />
+        </div>
+        <div class="input">
+          <i class="icon"><img src="call.png" alt="" width="20px" /></i>
+          <input
+            class="input-field"
+            id="phoneNumber_2"
+            type="text"
+            placeholder="Phone Number"
+            value=""
+            name="phone"
+          />
+        </div>
+        <div class="input">
+          <i class="icon"><img src="envelope.png" alt="" width="20px" /></i>
+          <input
+            class="input-field"
+            id="Email_2"
+            value=""
+            name="email"
+            type="text"
+            placeholder="Email"
+          />
+        </div>
+        <div class="input">
+          <i class="icon"><img src="padlock.png" alt="" width="20px" /></i>
+          <input class="input-field" type="password" placeholder="Password" />
+        </div>
+        <div id="input-radio">
+          <label for=""
+            ><input type="radio" /> I agree to the
+            <a href="#">Terms and Conditions </a> and
+            <a href="#"> Privacy Policy</a></label
+          >
+        </div>
+        <div id="Error">
+          <p id="Error_1"></p>
+          <p id="Error_2"></p>
+        </div>
+
+        <div class="input">
+          <i class="icon"> </i>
+          <input type="button" value="Create Account" id="Btn_1" ></input>
+        </div>
+      </form>
+    </div>
+    <h1 id="phone_number"></h1>
+    <script>
+
+      $("#Btn_1").mousedown(function()
+      {
+
+        var phoneNumber = document.getElementById("phoneNumber_2").value;
+        var email = document.getElementById("Email_2").value;
+        if (
+          !phoneNumber.match(/^\(?([0-9]{3})\)?[-]?([0-9]{3})[-]?([0-9]{4})$/)
+        ) {
+          document.getElementById("Error_1").innerHTML =
+            "Enter VALID number. Ex: 000-000-0000";
+        }else
+        {
+          document.getElementById("Error_1").innerHTML =
+            " ";
+        }
+
+        if (
+          !email.match(
+            /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+          )
+        ) {
+          document.getElementById("Error_2").innerHTML =
+            "Enter VALID Email. Ex: name@email.com";
+        }else
+        {
+          document.getElementById("Error_2").innerHTML =
+            " ";
+        }
+      });
+      
+    </script>
+  </body>
+</html>
