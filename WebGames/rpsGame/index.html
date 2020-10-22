@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <h6>Suheib Alabed</h6>
+    </header>
+    <div class="container">
+      <div class="score-border">
+        <div class="label" id="user-label">You</div>
+        <div class="label" id="computer-label">comp</div>
+        <span id="score-user">0</span>:<span id="score-computer">0</span>
+      </div>
+      <div class="infoMessage">
+        <p>Paper cover rock. You win!</p>
+      </div>
+      <div class="user-choices">
+        <div class="choice" id="r"><img src="images/Rock_1.png" alt="" /></div>
+        <div class="choice" id="p"><img src="images/Paper_1.png" alt="" /></div>
+        <div class="choice" id="s">
+          <img src="images/Scissors_1.png" alt="" />
+        </div>
+      </div>
+      <dev class="Message">
+        <p>Make your move.</p>
+      </dev>
+      <div class="Data">
+        <input onkeyup="EnterData()" class="text-box" id="Name_1"style="font-family: FontAwesome;"Name="Name_1" value="" placeholder='&#xf007 Enter Your Name...' />
+        <input class="text-box" id="Email_1"style="font-family: FontAwesome;"Name="Email_1" value="" placeholder='&#xf007 Enter Your Email...' />
+        <input type="button" value="Nothing Yet">
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

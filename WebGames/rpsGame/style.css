@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2196f3;
+}
+header {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Asap", sans-serif;
+  top: 0;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+}
+.score-border {
+  margin: 1rem auto;
+  text-align: center;
+  border: 2px white solid;
+  width: 20vmax;
+  padding: 1rem;
+  font-size: 2em;
+  position: relative;
+  color: white;
+}
+
+.label {
+  background-color: #ae1720;
+  color: white;
+  position: absolute;
+  font-family: "Asap", sans-serif;
+}
+#user-label {
+  left: -1.5rem;
+  top: 1.3rem;
+  font-size: 0.7em;
+}
+#computer-label {
+  right: -2rem;
+  top: 1.3rem;
+  font-size: 0.7em;
+}
+
+.infoMessage {
+  text-align: center;
+  font-family: "Asap", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 4vmax;
+}
+.user-choices img {
+  width: 10vmax;
+}
+.user-choices {
+  margin: 30px auto;
+  text-align: center;
+}
+.choice {
+  display: inline-block;
+  border: 3px white solid;
+  border-radius: 150px;
+  padding: 1rem;
+  margin: 0 20px 0 0;
+  transition: all 0.4s ease;
+}
+.choice:hover {
+  cursor: pointer;
+  background-color: white;
+  transform: rotate(10deg);
+}
+
+.Message {
+  text-align: center;
+  color: white;
+  font-size: 2vmax;
+  font-weight: bold;
+  font-family: "Asap", sans-serif;
+}
+
+sub {
+  font-size: 0.4em;
+  background-color: #ae1720;
+  font-weight: normal;
+}
+
+.Data {
+  background-color: #ae1720;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+  width: 25rem;
+  position: relative;
+  border-radius: 20px;
+}
+.text-box {
+  height: 3rem;
+  width: 20rem;
+  font-size: 1.5em;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1rem;
+  padding: 10px;
+}
