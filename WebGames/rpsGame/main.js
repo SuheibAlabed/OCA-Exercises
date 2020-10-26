@@ -10,6 +10,7 @@ let Name_Data = document.getElementById("Name_1");
 let Email_Data = document.getElementById("Email_1");
 const user_label_div = document.getElementById("user-label");
 
+
 function EnterData() {
   return (user_label_div.innerHTML = Name_Data.value);
 }
