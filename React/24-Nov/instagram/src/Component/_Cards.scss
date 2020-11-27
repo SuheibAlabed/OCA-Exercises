@@ -1,0 +1,81 @@
+@import "./Body.scss";
+
+.Card {
+  margin-top: 3rem;
+  box-shadow: 0 0 0.5px 1px #ccc;
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+.Post .Container {
+  display: flex;
+  flex-direction: column;
+}
+.PF_HP {
+  @include PFImg;
+  border: 5px double;
+  border-color: var(--border-Bfr-Watch);
+  width: 65px;
+  height: 65px;
+}
+.PF_card {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+
+  text-decoration-line: none;
+  color: #333;
+  p,
+  span {
+    margin-left: 1rem;
+  }
+  p {
+    font-weight: 700;
+  }
+}
+
+.Description {
+  padding: 1rem;
+  .Icon {
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: #333;
+      cursor: pointer;
+    }
+  }
+  .Likes {
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+  }
+  .Heart {
+    &:active {
+      color: red;
+    }
+  }
+  sub b {
+    color: rgb(124, 118, 118);
+  }
+}
+.CommentBox {
+  input {
+    width: 90%;
+    border: none;
+    border-top: 1px solid #ccc;
+    padding: 1rem;
+    text-align: left;
+  }
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: blueviolet;
+
+    &:hover {
+      cursor: pointer;
+      color: blue;
+    }
+  }
+}
