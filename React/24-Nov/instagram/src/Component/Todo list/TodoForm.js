@@ -1,7 +1,13 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect, useRef } from "react";
+import "../_Cards.scss";
 function TodoForm(props) {
   const [input, setInput] = useState("");
+
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current.focus();
+  });
 
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -9,10 +15,10 @@ function TodoForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // props.onSubmit({
-    //   id: Math.floor(Math.random() * 10000),
-    //   text: input,
-    // });
+    props.onSubmit({
+      id: Math.floor(Math.random() * 10000),
+      text: input,
+    });
 
     setInput("");
   };
@@ -25,6 +31,7 @@ function TodoForm(props) {
         name="text"
         className="todo-input"
         onChange={handleChange}
+        ref={inputRef}
       />
       <button className="tod-button">Post</button>
     </form>

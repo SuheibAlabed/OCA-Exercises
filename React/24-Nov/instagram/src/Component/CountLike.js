@@ -4,6 +4,7 @@ import { BiComment, BiBookmark } from "react-icons/bi";
 import { ImCompass2 } from "react-icons/im";
 import { FaRegHeart, FaHeart, FaSearch, FaRegComment } from "react-icons/fa";
 import { BsHeart } from "react-icons/bs";
+import "./_Cards.scss";
 class CountLike extends React.Component {
   constructor(props) {
     super(props);
@@ -23,6 +24,10 @@ class CountLike extends React.Component {
     });
   }
 
+  Comment(e) {
+    e.preventDefault();
+  }
+
   render() {
     const { counter } = this.state;
 
@@ -34,7 +39,7 @@ class CountLike extends React.Component {
               <BsHeart size={35} className="Icon_1" />
             </a>
             <a href="#">
-              <BiComment size={35} className="Icon_1" />
+              <BiComment size={35} className="Icon_2" onClick={this.Comment} />
             </a>
             <a href="#">
               <RiSendPlaneFill size={35} className="Icon_1" />

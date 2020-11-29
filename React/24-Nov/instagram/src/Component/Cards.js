@@ -1,16 +1,16 @@
-import React, { Component, useState } from "react";
-import PF from "../Instagram Project/Image/PFP_11.jpg";
+// // import React, { Component, useState } from "react";
+// import PF from "../Instagram Project/Image/PFP_11.jpg";
 import { cardPost } from "../Data/DataPost";
 import "react-icons/fi";
 import "react-icons/ri";
 import "react-icons/im";
 import "react-icons/bs";
 import "react-icons/bi";
-import { RiSendPlaneFill } from "react-icons/ri";
-import { BiComment, BiBookmark } from "react-icons/bi";
-import { ImCompass2 } from "react-icons/im";
-import { FaRegHeart, FaHeart, FaSearch, FaRegComment } from "react-icons/fa";
-import { BsHeart } from "react-icons/bs";
+// import { RiSendPlaneFill } from "react-icons/ri";
+// import { BiComment, BiBookmark } from "react-icons/bi";
+// import { ImCompass2 } from "react-icons/im";
+// import { FaRegHeart, FaHeart, FaSearch, FaRegComment } from "react-icons/fa";
+// import { BsHeart } from "react-icons/bs";
 import "./_Cards.scss";
 import CountLike from "./CountLike";
 // import TodoForm from "./Todo list/TodoForm";
@@ -38,10 +38,11 @@ const Cards = () => {
           <label className="CommentBox">
             {" "}
             <TodoList />
+            {/* <TodoForm /> */}
           </label>
           {/* <div className="Comments">
             <TodoList />
-          </div> */}
+          </div>  */}
         </div>
       </div>
     );
